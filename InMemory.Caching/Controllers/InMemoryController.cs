@@ -6,11 +6,11 @@ namespace InMemory.Caching.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RedisController : ControllerBase
+    public class InMemoryController : ControllerBase
     {
         readonly IMemoryCache _memoryCache;
 
-        public RedisController(IMemoryCache memoryCache)
+        public InMemoryController(IMemoryCache memoryCache)
         {
             _memoryCache = memoryCache;
         }
